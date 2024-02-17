@@ -1,20 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticket Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<style>
+    .raleway{
+        font-family: "Raleway", sans-serif;
+    }
+  .inter{
+    font-family: "Inter", sans-serif;
+  }
+</style>       
 </head>
 <body>
-    <header>
-
+    <header class="container mx-auto raleway">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li class="text-xl font-medium text-[#4E5159]"><a>Home</a></li>
+                  <li class="text-xl font-medium text-[#4E5159]"><a>About</a></li>
+                    <li class="text-xl font-medium text-[#4E5159]"><a>Destination</a></li>
+                    <li class="text-xl font-medium text-[#4E5159]"><a>Search</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-extrabold">WB-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-xl font-medium text-[#4E5159]"><a>Home</a></li>
+                  <li class="text-xl font-medium text-[#4E5159]"><a>About</a></li>
+                    <li class="text-xl font-medium text-[#4E5159]"><a>Destination</a></li>
+                    <li class="text-xl font-medium text-[#4E5159]"><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#E8FAE5] border-2 border-solid border-[#c7f3c0] text-xl text-[#1DD100] font-bold">Bus
+                <img class="border-[1px] border-dashed border-gray-400" src="./images/bus-icon.png" alt="">
+              </a>
+            </div>
+          </div>
     </header>
-    <main>
-
+    <main class="container mx-auto ">
+        <section class="mt-7 raleway">
+            <!-- <img src="./images/banner.png" alt=""> -->
+            <div class="hero h-[600px] rounded-[32px] object-cover" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-[32px]"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-6xl font-extrabold text-[#FFFFFF]">End-to-End Travel with</h1>
+                    <h2 class="text-6xl font-extrabold text-[#1DD100]">WB Paribahan</h2>
+                    <p class="mb-7 mt-4 text-[18px] font-normal text-[#FFFFFF] max-w-[650px]">There's a timeless charm associated with bus travel that transcends generations. For many, it evokes memories of childhood road trips or romanticized tales of hitchhiking adventures. </p>
+                    <button class="btn btn-primary bg-[#1DD100] text-xl font-bold text-[#030712]">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="mt-28 mb-16">
+            <h1 class="text-[40px] font-bold raleway mb-12 text-center">Best offers for you</h1>
+            <div class="flex gap-6">
+            <div class="flex flex-1 bg-[#FFBF0F] rounded-3xl text-[#030712]">
+            <div class="inter flex flex-col justify-center items-center px-20 space-y-3">
+                <h1 class="text-[40px] font-extrabold text-[#352C11]">15% OFF</h1>
+                <h4 class="text-xl font-semibold text-[#352C11]">on your next purchase</h4>
+                <p class="text-[18px] font-medium text-[#816310]">use by January 2024</p>
+            </div>
+            <div>
+                <img class="pl-10 border-[1px] border-dashed border-[#1DD100]" src="./images/cupon-devider.png" alt="">
+            </div>
+            <div class="raleway flex flex-col justify-center items-center pl-14">
+                <h1 class="text-[32px] font-bold text-[#352C11]">NEW15</h1>
+                <p class="text-xl font-medium text-[#816310]">Coupon Code</p>
+            </div>
+        </div>
+        <div class="flex flex-1 bg-[#F78C9C] rounded-3xl">
+            <div class="inter flex flex-col justify-center items-center px-20 space-y-4">
+                <h1 class="text-[40px] font-extrabold text-[#352C11]">15% OFF</h1>
+                <h4 class="text-xl font-semibold text-[#352C11]">on your next purchase</h4>
+                <p class="text-[18px] font-medium text-[#816310]">use by January 2024</p>
+            </div>
+            <div>
+                <img class="pl-20 border-[1px] border-dashed border-[#1DD100]" src="./images/cupon-devider.png" alt="">
+            </div>
+            <div class="raleway flex flex-col justify-center items-center pl-14">
+                <h1 class="text-[32px] font-bold text-[#352C11]">Couple 20</h1>
+                <p class="text-xl font-medium text-[#816310]">Coupon Code</p>
+            </div>
+        </div>
+    </div>
+        </section>
+        <section class="raleway">
+            <div class="flex flex-col justify-center items-center mb-16">
+            <button class="border-2 border-solid border-[#1DD100] text-[#1DD100] font-bold text-xl rounded-xl py-5 px-7">See All Offers</button>
+            </div>
+            <div class="mb-11">
+                <div class="flex flex-col justify-center items-center">
+                <h1 class="font-bold text-[40px] text-[#030712] mb-2">WB Paribahan</h1>
+                <p class="text-center text-[18px] font-normal text-[#8B8D93]">There's a timeless charm associated with bus travel that transcends generations.For many,<br>it evokes memories of childhood road trips or romanticized tales of hitchhiking</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                    <h1>Greenline Paribahan</h1>
+                    <p class="inter">Coach-009-WEB ! AC_Business</p>
+                    </div>
+                    <div class="inter">
+                        <button class="btn">
+                            <img class="border-[1px] border-dashed border-gray-400" src="./images/seat-green.png" alt="">
+                            <span>40 Seats left</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
