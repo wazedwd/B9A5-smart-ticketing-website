@@ -1,0 +1,56 @@
+ <div class="flex bg-red-200 rounded-2xl container mx-auto">
+                    <div class="flex flex-col flex-1">
+                        <!-- bus logo -->
+                        <div class="flex my-8 mx-8 justify-between">
+                            <div class="flex gap-4">
+                                <div>
+                                    <img src="./images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h1 class="text-3xl font-bold text-[#030712]">Greenline Paribahan</h1>
+                                    <p class="text-[18px] font-normal text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="flex btn bg-[#1DD10026] border-none">
+                                    <img class="border-[1px] border-dashed border-gray-400"
+                                        src="./images/seat-green.png" alt="">
+                                    <span class="inter text-[18px] font-medium text-[#1DD100]">40</span>
+                                    <p class="inter text-[18px] font-medium text-[#1DD100]">Seats left</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- greenline body part one -->
+                        <div class=" bg-[#F7F8F8] mx-8 my-8 px-8 py-8  space-y-5 rounded-xl">
+                            <div class="flex justify-between border-b-[1px] border-dashed border-gray-400">
+                                <p class="text-[18px] font-semibold text-[#03071299]">Route</p>
+                                <p class="text-[18px] font-medium text-[#030712]">Dhaka - Sylhet</p>
+                            </div>
+                            <div class="flex justify-between border-b-[1px] border-dashed border-gray-400 pb-4">
+                                <p class="text-[18px] font-semibold text-[#03071299]">Departure Time</p>
+                                <p class="text-[18px] font-medium text-[#030712]">9:00 PM</p>
+                            </div>
+                            <div>
+                                <button class="btn text-base font-medium text-[#030712CC] mr-4">Boarding Point -
+                                    Laxmipur</button>
+                                <button class="btn text-base font-medium text-[#030712CC] mr-4">Dropping Point -
+                                    Bogura</button>
+                                <button class="btn text-base font-medium text-[#030712CC]">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- greenline second part -->
+                    <!-- info divider -->
+                    <div>
+                        <img class="border-[1px] border-dashed
+                         border-gray-400" src="./images/info-devider.png" alt="">
+                    </div>
+                    <!-- info divider -->
+                    <div class="flex justify-center items-center m-16">
+                        <div class="flex flex-col justify-center items-center gap-2">
+                            <img class="border-[1px] border-dashed border-gray-400" src="./images/fare.png" alt="">
+                            <h3 class="text-3xl font-bold text-[#030712]"><span>550</span>Taka</h3>
+                            <p class="text-2xl font-medium text-[#03071299]">Per Seat</p>
+                        </div>
+                    </div>
+                </div>

@@ -1,0 +1,25 @@
+<div class="mt-6">
+    <h1
+        class="text-2xl font-medium text-[#030712] border-b-[1px] border-dashed border-gray-400 pb-2">
+        Select Your Seat</h1>
+    <!-- avilave set buton -->
+    <div class="flex border-b-[1px] border-dashed border-gray-400 mt-3 pb-3 ">
+        <div class="flex">
+            <img src="./images/seat-gray.png" alt="">
+            <p class="text-[18px] font-medium inter text-[#03071280]">Available</p>
+        </div>
+        <div class="flex gap-2">
+            <img src="./images/seat-green-filled.png" alt="">
+            <p class="text-[18px] font-medium text-[#1DD100]">Selected</p>
+        </div>
+    </div>
+    <!-- avilave set buttonn -->
+    <!-- bus controlar logo -->
+    <div class="mt-6">
+        <button class="btn px-10 py-3 bg-[#E5E6E7] border-none mb-6">
+            <img src="./images/Vector.svg" alt="">
+        </button>
+    </div>
+    <!-- bus controlar logo -->
+    <!-- sit count -->
+</div>
