@@ -11,6 +11,12 @@ for(const btn of buttonsClk) {
     const innerSetMoney = setMoney.innerText;
     const convertInnerSetMoney = parseInt(innerSetMoney);
 
+    const countSits = addElementById('sit-count');
+    console.log(countSits);
+    if(countSits >= 4) {
+        alert('select only four sets');
+        return;
+    }
 
     // add element and price start
     const addNew = document.getElementById('table');
@@ -37,20 +43,13 @@ for(const btn of buttonsClk) {
     setValueById('set-minus-40', minusOneByOne);
     // minus value from set end
 
-    const countSits = addElementById('sit-count');
-    console.log(countSits);
-    if(countSits >= 4) {
-        alert('select only four');
-        event.target.setAttribute('disable', true);
-        return;
-    }
     // count value in form start
     const sitCount = addElementById('sit-count');
     const increasingSit = sitCount + 1;
     setValueById('sit-count', increasingSit);
     // count value in from end
 
-    
+
     // add total price start
     const addTotal = addElementById('total-price');
     const addTotalIncreasing = addTotal + convertInnerSetMoney;
