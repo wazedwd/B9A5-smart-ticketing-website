@@ -15,6 +15,7 @@ for(const btn of buttonsClk) {
     console.log(countSits);
     if(countSits >= 4) {
         alert('select only four sets');
+        btn.classList.remove('bg-green-400');
         return;
     }
     const minusSits = addElementById('set-minus-40') 
