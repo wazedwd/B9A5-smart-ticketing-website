@@ -2,8 +2,7 @@ const buttonsClk = document.getElementsByClassName('kbd-clk');
 
 for(const btn of buttonsClk) {
     btn.addEventListener('click', function(event) {
-    // console.log(event.target);
-
+    event.target.setAttribute('disabled', true);
     const btnBgColor = btn.classList.add('bg-green-400');
     const parSetPrice = event.target;
 
@@ -11,6 +10,8 @@ for(const btn of buttonsClk) {
     const setMoney = document.getElementById("set-price");
     const innerSetMoney = setMoney.innerText;
     const convertInnerSetMoney = parseInt(innerSetMoney);
+
+
     // add element and price start
     const addNew = document.getElementById('table');
     const addInner = document.getElementById('table-body');
@@ -29,23 +30,27 @@ for(const btn of buttonsClk) {
     addInner.appendChild(tableRow);
     addNew.appendChild(addInner);
     // add element and price end
+
     // minus value from set start
     const minusValue = addElementById('set-minus-40') 
     const minusOneByOne = minusValue - 1;
     setValueById('set-minus-40', minusOneByOne);
     // minus value from set end
+
+    const countSits = addElementById('sit-count');
+    console.log(countSits);
+    if(countSits >= 4) {
+        alert('select only four');
+        event.target.setAttribute('disable', true);
+        return;
+    }
     // count value in form start
     const sitCount = addElementById('sit-count');
     const increasingSit = sitCount + 1;
     setValueById('sit-count', increasingSit);
     // count value in from end
-    // const ticketCount = document.getElementById('sit-count');
-    if(increasingSit >= 4) {
-        // buttonForClk.setAttribute("disabled", true)
-        alert('select only four');
-        return
-    }   
 
+    
     // add total price start
     const addTotal = addElementById('total-price');
     const addTotalIncreasing = addTotal + convertInnerSetMoney;
@@ -113,12 +118,7 @@ function setValueById(inputId, value) {
         } 
     });
 
- const buttonsForClick = document.getElementById('next-button').addEventListener('click', function() {
-    const lastSection = document.getElementById('last-section');
-    lastSection.classList.remove('hidden');
- })
- 
-const buttonForClk = document.getElementById('continue-button').addEventListener('click', function() {
-    const hide = document.getElementById('last-section');
-    hide.classList.add('hidden');
-})
+
+
+
+
