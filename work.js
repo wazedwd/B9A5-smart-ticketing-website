@@ -17,7 +17,11 @@ for(const btn of buttonsClk) {
         alert('select only four sets');
         return;
     }
-
+    const minusSits = addElementById('set-minus-40') 
+    if(minusSits <= 36) {
+        alert('set only book four');
+        return;
+    }
     // add element and price start
     const addNew = document.getElementById('table');
     const addInner = document.getElementById('table-body');
