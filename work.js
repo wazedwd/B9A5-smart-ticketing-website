@@ -2,7 +2,7 @@ const buttonsClk = document.getElementsByClassName('kbd-clk');
 
 for(const btn of buttonsClk) {
     btn.addEventListener('click', function(event) {
-    console.log(event.target);
+    // console.log(event.target);
 
     const btnBgColor = btn.classList.add('bg-green-400');
     const parSetPrice = event.target;
@@ -39,6 +39,13 @@ for(const btn of buttonsClk) {
     const increasingSit = sitCount + 1;
     setValueById('sit-count', increasingSit);
     // count value in from end
+    // const ticketCount = document.getElementById('sit-count');
+    if(increasingSit >= 4) {
+        // buttonForClk.setAttribute("disabled", true)
+        alert('select only four');
+        return
+    }   
+
     // add total price start
     const addTotal = addElementById('total-price');
     const addTotalIncreasing = addTotal + convertInnerSetMoney;
@@ -109,7 +116,6 @@ function setValueById(inputId, value) {
  const buttonsForClick = document.getElementById('next-button').addEventListener('click', function() {
     const lastSection = document.getElementById('last-section');
     lastSection.classList.remove('hidden');
-    
  })
  
 const buttonForClk = document.getElementById('continue-button').addEventListener('click', function() {
